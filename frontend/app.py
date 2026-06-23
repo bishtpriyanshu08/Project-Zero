@@ -726,8 +726,8 @@ def main():
 
 
 # =============================================================================
-# Entry point
+# Entry point — always call main() (Streamlit Cloud does not guarantee
+# __name__ == "__main__", so we avoid the guard)
 # =============================================================================
 
-if __name__ == "__main__":
-    main()
+main()
